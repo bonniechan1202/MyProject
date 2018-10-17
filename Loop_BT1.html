@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+
+	<body>
+<p> Display "Good Day!"</p> if the hour is less than 18:00
+<p id="demo"> Good Evening!</p>
+<script type="text/javascript">
+	if (new Date().getHours()<18) {
+		document.getElementById("demo").innerHTML ="Good Day!";
+	}
+</script> <br>
+
+<p> Clisck the button to display a time-based greetings: </p>
+<button onclick="myFunction()">Try It! </button>
+<p id="demo1"> </p>
+<script type="text/javascript">
+	function myFunction() {
+		var hour = new Date().getHours();
+		var greetings;
+		if (hour <18){
+			greetings ="Good day";
+		}else{
+			greetings ="Good evening";
+		}
+		document.getElementById("demo1").innerHTML =greetings;
+		}
+</script> <br>
+
+<p id="demo2"></p>
+<script type="text/javascript">
+	var day;
+	switch (new Date().getDay()) {
+		case 0:
+		day="Sunday";
+		break;
+
+		case 1:
+		day="Monday";
+		break;
+
+		case 2:
+		day="Tuesday";
+		break;
+
+		case 3:
+		day="Wednesday";
+		break;
+
+		case 4:
+		day="Thursday";
+		break;
+
+		case 5:
+		day="Friday";
+		break;
+
+		case 6:
+		day="Saturday";
+		break;
+	}
+	document.getElementById("demo2").innerHTML="Today is " + day;
+</script>
+
+<p>Input your age and click on button:</p>
+<input id="age" value ="18"/>
+<button onclick="myFunction1()">Try It! </button>
+<p id="demo3"></p>
+<script type="text/javascript">
+	function myFunction1 () {
+		var age, voteable;
+		age = document.getElementById("age").value;
+voteable =(age<18) ?"Too Young " :"Old Enough "
+document.getElementById("demo3").innerHTML= voteable +"to vote"
+	}
+</script>
+
+<p>Click the button to loop through a block of code five times.</p>
+<button onclick="myFunction2()">Try It!</button>
+<p id="demo4"></p>
+<script type="text/javascript">
+	function myFunction2(){
+		var text="";
+		var i;
+		for (i=0; i <10; i++){
+			text +="The number is" + i + "<br>";
+		}
+		document.getElementById("demo4").innerHTML =text;
+	}
+</script>
+
+<p id="demo5"></p>
+<script type="text/javascript">
+	var txt="";
+	var people ={fname:"John", lname:"Doe", age:25};
+	var x
+</script>
+	</body>
+</html>
