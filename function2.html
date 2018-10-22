@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+	
+	<body>
+<p>This is an example</p>
+<p id="demo"></p>
+	<script type="text/javascript">
+function myFunction(a, b) {
+	return a*b;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+	</script>
+	<br>
+	<p>Creating JS Object:</p>
+	<p id="demo1"></p>
+	<script type="text/javascript">
+var person ={firstName="John", lastName="Doe", age:59, eyeColor="Blue"};
+document.getElementById("demo1").inner.HTML= person.firstName +" is " person.age + "years old.";
+
+	</script>
+<br>
+<p>Creating and using object method.</p>
+<p>An object method is a function definition, stored as a property value.</p>
+<p id="demo2"></p>
+<script type="text/javascript">
+	var person1 = {\
+		firstName: "John",
+		lastName: "Doe",
+		id :5566,
+		fullName: function(){ return this.firstName +" "+this.lastName;}
+	};
+	document.getElementById("demo2").innerHTML =person.fullName();
+
+</script>
+	</body>
+</html>
